@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { of } from 'rxjs';
 
 @Component({
   selector: 'app-body',
