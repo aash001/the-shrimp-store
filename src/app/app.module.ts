@@ -11,6 +11,10 @@ import { ShrimpsComponent } from './shrimps/shrimps.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { AboutComponent } from './about/about.component';
 import { CartComponent } from './cart/cart.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ProductComponent } from './product/product.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ImagekitioAngularModule } from 'imagekitio-angular';
 
 @NgModule({
   declarations: [
@@ -23,8 +27,20 @@ import { CartComponent } from './cart/cart.component';
     TutorialsComponent,
     AboutComponent,
     CartComponent,
+    PagenotfoundComponent,
+    ProductComponent,
+    ProductDetailsComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    ImagekitioAngularModule.forRoot({
+      publicKey: 'public_k9XRAy+88emWiSzu6gD/qJ1iruw=',
+      urlEndpoint: 'https://ik.imagekit.io/oiinm7zlx',
+      authenticationEndpoint: 'http://www.yourserver.com/auth',
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
