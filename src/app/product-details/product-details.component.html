@@ -1,1 +1,13 @@
-<p>product-details works!</p>
+<div class="product-view-container" *ngIf="product">
+  <div class="product-view-content">
+    <div class="image-section">
+      <ik-image class="products-image" path="{{product.image}}" alt="Shrimp Tank"></ik-image>
+    </div>
+    <div class="product-detail-section">
+      <p class="product-name">{{product.name}}</p>
+      <p class="product-description">{{product.description}}</p>
+      <p class-="product-price">{{product.price | currency}}</p>
+      <button class="btn-add-cart">Add To Cart</button>
+    </div>
+  </div>
+</div>

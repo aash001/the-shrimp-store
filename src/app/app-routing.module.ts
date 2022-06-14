@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'cart', component: CartComponent },
   { path: '404', component: PagenotfoundComponent },
-  { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
+  //{ path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 ];
 
 @NgModule({

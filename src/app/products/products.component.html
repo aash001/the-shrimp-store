@@ -1,46 +1,10 @@
 <h1>Products</h1>
 
-<ul>
+<ul *ngFor="let product of products">
   <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/shrimp-tank_mz63jmt12.png"></ik-image>
+    <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+      <ik-image class="products-image" path={{product.image}}></ik-image>
     </a>
-    <h2 class="product-title">Shrimp Tank</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/double-head-filter_jVT0KU6zf.png"></ik-image>
-    </a>
-    <h2 class="product-title">Aquarium Filter</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/water-test-kit_AXc-ju-66.png"></ik-image>
-    </a>
-    <h2 class="product-title">Water Test Kit</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/shrimp-nest_Rk2uQPoGy.png"></ik-image>
-    </a>
-    <h2 class="product-title">Shrimp Home</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/samurai-soil_Y3pdjcEnP.png"></ik-image>
-    </a>
-    <h2 class="product-title">Soil</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/shrimp-lighting_6uDp48gwG.png"></ik-image>
-    </a>
-    <h2 class="product-title">Lighting</h2>
-  </li>
-  <li>
-    <a>
-      <ik-image class="products-image" path="shrimp/salty-shrimp-gh-kh_bpvrZwVbX.png"></ik-image>
-    </a>
-    <h2 class="product-title">GH/KH/PH Up</h2>
+    <h2 class="product-title">{{product.name}}</h2>
   </li>
 </ul>

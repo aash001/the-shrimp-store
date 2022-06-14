@@ -15,7 +15,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ImagekitioAngularModule } from 'imagekitio-angular';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,11 @@ import { ImagekitioAngularModule } from 'imagekitio-angular';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    RouterModule.forRoot([
+      { path: 'products/:productId', component: ProductDetailsComponent },
+    ]),
     ImagekitioAngularModule.forRoot({
       publicKey: 'public_k9XRAy+88emWiSzu6gD/qJ1iruw=',
       urlEndpoint: 'https://ik.imagekit.io/oiinm7zlx',
