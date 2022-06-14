@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ImagekitioAngularModule } from 'imagekitio-angular';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ShippingComponent } from './shipping/shipping.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,14 +33,17 @@ import { RouterModule } from '@angular/router';
     PagenotfoundComponent,
     ProductComponent,
     ProductDetailsComponent,
+    ShippingComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'shipping', component: ShippingComponent },
     ]),
     ImagekitioAngularModule.forRoot({
       publicKey: 'public_k9XRAy+88emWiSzu6gD/qJ1iruw=',
