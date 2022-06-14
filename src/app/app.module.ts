@@ -19,6 +19,7 @@ import { ImagekitioAngularModule } from 'imagekitio-angular';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ShrimpDetailsComponent } from './shrimp-details/shrimp-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductComponent,
     ProductDetailsComponent,
     ShippingComponent,
+    ShrimpDetailsComponent,
   ],
   imports: [
     BrowserModule,

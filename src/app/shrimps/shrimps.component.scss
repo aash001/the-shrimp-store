@@ -2,3 +2,11 @@
 text-align: center;
 }
 
+img {
+  width: 20rem;
+}
+
+img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
