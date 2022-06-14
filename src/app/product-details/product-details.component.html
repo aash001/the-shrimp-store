@@ -7,7 +7,7 @@
       <p class="product-name">{{product.name}}</p>
       <p class="product-description">{{product.description}}</p>
       <p class-="product-price">{{product.price | currency}}</p>
-      <button class="btn-add-cart">Add To Cart</button>
+      <button type="button" class="btn-add-cart" (click)="addToCart(product)">Add To Cart</button>
     </div>
   </div>
 </div>
