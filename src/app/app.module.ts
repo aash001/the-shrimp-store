@@ -20,6 +20,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ShrimpDetailsComponent } from './shrimp-details/shrimp-details.component';
+import { ShrimpListingComponent } from './shrimp-listing/shrimp-listing.component';
+import { AddShrimpComponent } from './add-shrimp/add-shrimp.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,12 +40,15 @@ import { ShrimpDetailsComponent } from './shrimp-details/shrimp-details.componen
     ProductDetailsComponent,
     ShippingComponent,
     ShrimpDetailsComponent,
+    ShrimpListingComponent,
+    AddShrimpComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: 'products/:productId', component: ProductDetailsComponent },

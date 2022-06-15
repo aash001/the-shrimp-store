@@ -1,0 +1,9 @@
+<form #newShrimpForm="ngForm" class="shrimp-form" (ngSubmit)="addShrimp(newShrimpForm.value)">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" ngModel />
+
+  <label for="image">Image</label>
+  <input type="url" name="image" id="image" ngModel />
+
+  <input type="submit" value="Add Shrimp to the Database" />
+</form>

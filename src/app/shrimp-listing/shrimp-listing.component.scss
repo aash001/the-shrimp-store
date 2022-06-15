@@ -1,0 +1,15 @@
+header {
+  padding-bottom: 20px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+img,
+p {
+  max-width: 80%;
+  text-align: center;
+  padding: 10px;
+}

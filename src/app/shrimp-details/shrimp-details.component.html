@@ -1,1 +1,43 @@
-<p>shrimp-details works!</p>
+<header>
+  <h1>Neocardinia Davidi</h1>
+</header>
+
+<main>
+  <ul>
+    <li *ngFor="let shrimp of shrimps">
+      <app-shrimp-listing [id]="shrimp.id" [image]="shrimp.image" [name]="shrimp.name"></app-shrimp-listing>
+    </li>
+  </ul>
+</main>
+
+<app-add-shrimp></app-add-shrimp>
+
+<div class="card">
+  <h2 class="card-head">Shrimp Data</h2>
+  <div class="card-body">Neocaridina davidi spend much of the time grazing on surfaces. In aquariums with tank mates,
+    they may be more shy to
+    avoid predators. Instead of relying primarily on sight, neocaridina davidi tends to rely on feel with their long
+    antennae to scope its surroundings.Shrimp grow by molting out of their previous exoskeleton, their outer shells.
+    This is a process that takes seconds at
+    most, though if water parameters are not ideal- such as a lack of minerals, shrimp may become stuck in their molts
+    and
+    die. When shrimp molt, they leave behind a ghost-like exuviae (old exoskeleton) that may be left in the aquarium.
+    The
+    shrimp come back to consume this exuviae to gain minerals. After molting, shrimp may hide while their new
+    exoskeleton
+    hardens.</div>
+</div>
+<div class="card">
+  <h2 class="card-head">Diet</h2>
+  <div class="card-body">Omnivorous; algae, biofilm, blanched/decaying vegetation. Will eat pellet/tablet foods. Large
+    shrimp populations or
+    dedicated shrimp tanks should be fed a wide variety of foods in small amounts on a daily or bi-daily basis.</div>
+</div>
+<div class="card">
+  <h2 class="card-head">Habitat</h2>
+  <div class="card-body">While their exact origin of evolution is unknown, these small freshwater shrimp are mostly
+    found throughout Taiwan in
+    clear running water with lots of foliage. A planted terrain provides protection for both adults and juveniles and
+    cultivates algae and other biofilms. In ideal conditions, cherry shrimp will live up to 2 years but average only the
+    first year in an aquarium setting.</div>
+</div>
