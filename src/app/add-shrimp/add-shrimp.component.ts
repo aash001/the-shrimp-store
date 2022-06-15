@@ -12,7 +12,6 @@ export class AddShrimpComponent {
   shrimps: Shrimp[] = [];
 
   addShrimp(newShrimp: Shrimp) {
-    console.log(newShrimp);
     this.shrimpService.addShrimp(newShrimp);
   }
 }

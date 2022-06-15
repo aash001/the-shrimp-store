@@ -5,3 +5,16 @@
     <button (click)="onDeleteShrimp()">Delete</button>
   </div>
 </div>
+
+<form #editShrimpForm="ngForm" class="shrimp-form" (ngSubmit)="editShrimp(editShrimpForm.value)">
+  <label class="id" for="id">id</label>
+  <input class="id" type="number" name="id" id="id" [(ngModel)]="id" />
+
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" [(ngModel)]="name" />
+
+  <label for="image">Image</label>
+  <input type="url" name="image" id="image" [(ngModel)]="image" />
+
+  <input type="submit" value="Edit Shrimp" />
+</form>

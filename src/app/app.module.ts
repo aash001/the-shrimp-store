@@ -23,7 +23,7 @@ import { ShrimpDetailsComponent } from './shrimp-details/shrimp-details.componen
 import { ShrimpListingComponent } from './shrimp-listing/shrimp-listing.component';
 import { AddShrimpComponent } from './add-shrimp/add-shrimp.component';
 import { FormsModule } from '@angular/forms';
-
+import { EditShrimpComponent } from './edit-shrimp/edit-shrimp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     ShrimpDetailsComponent,
     ShrimpListingComponent,
     AddShrimpComponent,
+    EditShrimpComponent,
   ],
   imports: [
     BrowserModule,

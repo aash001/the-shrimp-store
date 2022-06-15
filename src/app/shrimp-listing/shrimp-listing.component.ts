@@ -18,5 +18,9 @@ export class ShrimpListingComponent implements OnInit {
   onDeleteShrimp() {
     this.shrimpService.deleteShrimp(this.id).subscribe();
   }
+
+  editShrimp(updatedShrimp: Shrimp) {
+    this.shrimpService.editShrimp(updatedShrimp);
+  }
   ngOnInit(): void {}
 }
