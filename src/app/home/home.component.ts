@@ -13,6 +13,11 @@ export class HomeComponent implements OnInit {
   WeatherData: any;
   data: any;
 
+  apiKeyConfig = {
+    weatherApiKey:
+      'https://api.openweathermap.org/data/2.5/weather?lat=28.162519&lon=-81.594070&appid=1396f5a526e4122d38e8f04ee388707e&units=imperial',
+  };
+
   weatherApiKey = apiKeyConfig.weatherApiKey;
 
   ngOnInit() {
