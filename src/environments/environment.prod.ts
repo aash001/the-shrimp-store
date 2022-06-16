@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseApiUrl: 'https://shrimp-api.herokuapp.com/',
+  baseApiUrl: 'https://shrimp-api.herokuapp.com',
 };
 
 export const apiKeyConfig = {

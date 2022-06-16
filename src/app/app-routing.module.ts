@@ -10,7 +10,7 @@ import { ShrimpsComponent } from './shrimps/shrimps.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'shrimps', component: ShrimpsComponent },
   { path: 'products', component: ProductsComponent },
