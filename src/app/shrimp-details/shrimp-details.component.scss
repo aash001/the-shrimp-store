@@ -2,13 +2,14 @@ header {
   padding-bottom: 20px;
 }
 
-ul {
+.shrimp-container {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 
-img, p{
-max-width: 80%;
+img, li, p{
+max-width: 100%;
 text-align: center;
 padding: 10px;
 }

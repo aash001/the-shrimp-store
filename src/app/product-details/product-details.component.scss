@@ -6,7 +6,6 @@ display: flex;
 padding: 0 24px;
 width: 90%;
 }
-
 .image-section {
 width: 50%;
 overflow: hidden;
@@ -21,12 +20,18 @@ overflow: hidden;
 
 .products-image {
 display: flex;
+justify-content: baseline;
 padding-left: 3rem;
 }
 
 .product-name {
   font-size: 34px;
   margin-bottom: 16px;
+}
+
+.product-price {
+  margin-bottom: 16px;
+  font-size: 18px;
 }
 
 .product-description {
@@ -57,6 +62,6 @@ select {
   font-size: 20px;
   color: grey;
   &:hover{
-    background: #3d5f66;}
+    background: #004870;}
 cursor: pointer;
 }

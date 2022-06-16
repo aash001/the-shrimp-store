@@ -3,7 +3,7 @@
 </header>
 
 <main>
-  <ul>
+  <ul class="shrimp-container">
     <li *ngFor="let shrimp of shrimps">
       <app-shrimp-listing [id]="shrimp.id" [image]="shrimp.image" [name]="shrimp.name"></app-shrimp-listing>
     </li>
