@@ -11,6 +11,11 @@ type ShrimpResponse = {
   shrimp: Shrimp;
 };
 
+export interface LocationResponse {
+  region: string;
+  city: string;
+}
+
 const shrimpsEndPoint = `${environment.baseApiUrl}/api/shrimps`;
 
 @Injectable({
@@ -46,5 +51,9 @@ export class ShrimpService {
 
   deleteShrimp(id: any) {
     return this.http.delete<Shrimp>(`${shrimpsEndPoint}/${id}`);
+  }
+
+  getLocation() {
+    return this.http.get<LocationResponse>('http://ip-api.com/json/');
   }
 }
