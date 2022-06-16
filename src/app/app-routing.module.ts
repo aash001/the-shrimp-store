@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: '404', component: PagenotfoundComponent },
   { path: 'shrimps/shrimp-details', component: ShrimpDetailsComponent },
-  //{ path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 ];
 
 @NgModule({
