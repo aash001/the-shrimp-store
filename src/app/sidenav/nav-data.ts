@@ -15,16 +15,6 @@ export const navbarData = [
     label: 'Products',
   },
   {
-    routeLink: 'tutorials',
-    icon: 'jam jam-document',
-    label: 'Tutorials',
-  },
-  {
-    routeLink: 'about',
-    icon: 'jam jam-info',
-    label: 'About',
-  },
-  {
     routeLink: 'cart',
     icon: 'jam jam-shopping-cart',
     label: 'Cart',
