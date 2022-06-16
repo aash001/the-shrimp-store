@@ -1,4 +1,5 @@
-<form #newShrimpForm="ngForm" class="shrimp-form" (ngSubmit)="addShrimp(newShrimpForm.value)">
+<form #newShrimpForm="ngForm" [class.shrimp-form]="edit === true" [class.hidden]="edit === false"
+  (ngSubmit)="addShrimp(newShrimpForm.value)">
   <label for="name">Name</label>
   <input type="text" name="name" id="name" ngModel />
 
@@ -7,4 +8,5 @@
 
   <button type="submit">Add Shrimp to the Database</button>
 </form>
-<div class="icon-container"><i class="fa-solid fa-fish"></i></div>
+<div class="icon-container"><i *ngIf="!edit" (click)="toggleEdit()" class="fa-solid fa-fish">Add Shrimp</i>
+</div>

@@ -9,6 +9,7 @@ import { Shrimp } from '../models/shrimp';
 })
 export class ShrimpListingComponent implements OnInit {
   shrimps: Shrimp[] = [];
+  edit: boolean = false;
 
   @Input() id?: number;
   @Input() name!: string;
@@ -21,6 +22,14 @@ export class ShrimpListingComponent implements OnInit {
 
   editShrimp(updatedShrimp: Shrimp) {
     this.shrimpService.editShrimp(updatedShrimp);
+  }
+
+  toggleEdit() {
+    if (this.edit === false) {
+      this.edit = true;
+    } else {
+      this.edit = false;
+    }
   }
 
   ngOnInit(): void {}

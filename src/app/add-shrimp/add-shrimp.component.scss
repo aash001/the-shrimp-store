@@ -28,7 +28,16 @@ form {
   cursor: pointer;
 }
 
+.icon-container:hover {
+  opacity:0.9;
+
+}
+
 input,
 label {
   padding: 5px;
+}
+
+.hidden{
+  display: none;
 }

@@ -5,7 +5,8 @@
   </div>
 </div>
 
-<form #editShrimpForm="ngForm" class="shrimp-form" (ngSubmit)="editShrimp(editShrimpForm.value)">
+<form #editShrimpForm="ngForm" [class.shrimp-form]="edit === true" [class.hidden]="edit === false"
+  (ngSubmit)="editShrimp(editShrimpForm.value)">
   <label class="id" for="id">id</label>
   <input class="id" type="number" name="id" id="id" [(ngModel)]="id" />
 
@@ -18,4 +19,4 @@
   <button type="submit" class="" value="Edit Shrimp">Edit</button>
   <button (click)="onDeleteShrimp()">Delete</button>
 </form>
-<div class="icon-container"><i class="fa-solid fa-fish"></i></div>
+<div class="icon-container" *ngIf="!edit" (click)="toggleEdit()"><i class="fa-solid fa-fish"></i></div>

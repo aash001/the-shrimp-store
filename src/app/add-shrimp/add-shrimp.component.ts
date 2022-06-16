@@ -12,11 +12,21 @@ export class AddShrimpComponent {
   constructor(private shrimpService: ShrimpService) {}
   shrimps: Shrimp[] = [];
 
+  edit: boolean = false;
+
   addShrimp(newShrimp: Shrimp) {
     this.shrimpService.addShrimp(newShrimp);
   }
 
   reload() {
     window.location.reload;
+  }
+
+  toggleEdit() {
+    if (this.edit === false) {
+      this.edit = true;
+    } else {
+      this.edit = false;
+    }
   }
 }
