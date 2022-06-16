@@ -2,7 +2,6 @@
   <ik-image class="shrimp-image" src={{image}}></ik-image>
   <div class="shrimp-name">
     <p>{{name}}</p>
-    <button (click)="onDeleteShrimp()">Delete</button>
   </div>
 </div>
 
@@ -16,5 +15,7 @@
   <label for="image">Image</label>
   <input type="url" name="image" id="image" [(ngModel)]="image" />
 
-  <input type="submit" value="Edit Shrimp" />
+  <button type="submit" class="" value="Edit Shrimp">Edit</button>
+  <button (click)="onDeleteShrimp()">Delete</button>
 </form>
+<div class="icon-container"><i class="fa-solid fa-fish"></i></div>

@@ -52,8 +52,4 @@ export class ShrimpService {
   deleteShrimp(id: any) {
     return this.http.delete<Shrimp>(`${shrimpsEndPoint}/${id}`);
   }
-
-  getLocation() {
-    return this.http.get<LocationResponse>('http://ip-api.com/json/');
-  }
 }

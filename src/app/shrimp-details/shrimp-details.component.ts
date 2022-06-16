@@ -12,7 +12,6 @@ export class ShrimpDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.shrimpService.fetchShrimps().subscribe((response) => {
-      console.log(response);
       this.shrimps = response.shrimps;
     });
   }
@@ -22,4 +21,8 @@ export class ShrimpDetailsComponent implements OnInit {
   @Input() image!: string;
 
   shrimps: Shrimp[] = [];
+
+  reload() {
+    window.location.reload;
+  }
 }

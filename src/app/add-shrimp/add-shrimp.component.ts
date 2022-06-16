@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Shrimp } from '../models/shrimp';
 import { ShrimpService } from '../shrimp.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-shrimp',
@@ -13,5 +14,9 @@ export class AddShrimpComponent {
 
   addShrimp(newShrimp: Shrimp) {
     this.shrimpService.addShrimp(newShrimp);
+  }
+
+  reload() {
+    window.location.reload;
   }
 }

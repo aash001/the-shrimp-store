@@ -22,5 +22,6 @@ export class ShrimpListingComponent implements OnInit {
   editShrimp(updatedShrimp: Shrimp) {
     this.shrimpService.editShrimp(updatedShrimp);
   }
+
   ngOnInit(): void {}
 }
