@@ -2,6 +2,14 @@
 
 Netlify Link: [Home](https://the-shrimp-store.netlify.app)
 
+Site Images:
+
+![alt text](https://i2.paste.pics/8e30455aabd13351a42a6be469060857.png)
+
+![alt text](https://i2.paste.pics/12775fd629ba53fcbd5e2e1b8abbaa90.png)
+
+![alt text](https://i2.paste.pics/39ad2f7970b6db90ddb128170f14b76c.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
 ## Development server
