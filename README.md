@@ -2,6 +2,14 @@
 
 Netlify Link: [Home](https://the-shrimp-store.netlify.app)
 
+What this App is:
+
+This app is a storefront promoting the sale of Aquarium products and contains a database to showcase the local sale of Neocaradinia Davidi Shrimp.
+
+What this App offers:
+
+The app allows for the addition of new types of shrimp to the inventory. The app also allows for the omission of inventory. Current inventory information is editable. The app allows for the addition of products to the cart and contains a checkout feature.
+
 Site Images:
 
 ![alt text](https://i2.paste.pics/8e30455aabd13351a42a6be469060857.png)

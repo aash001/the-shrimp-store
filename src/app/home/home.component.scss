@@ -7,7 +7,9 @@
 }
 
 .card {
+  display: grid;
   text-align: center;
+
 }
 
 .card-body {
@@ -16,7 +18,8 @@
 
 .weatherContainer {
   display: flex;
-  justify-content: end;
+  justify-content: space-evenly;
+  padding-left: 22%;
 }
 
 #divWeatherMain {
